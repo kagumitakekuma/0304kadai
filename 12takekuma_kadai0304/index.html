@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>practice</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+
+       <div class="title"><h1 id="elem">DEBAYASHIQUIZ</h1></div>
+       <div class="introduction">
+    <h2 id="tame">
+      これは、お笑い好きによる、お笑い好きのための、出囃子（でばやし）クイズです。</h2> 
+    <h2 class="tame">
+      下の、第〇問をクリックすると、ある番組の出囃子が流れます。
+    </h2>
+    <h2 class="tame">おなじみのものからちょっとマニアックなものまで・・・</h2>
+    <h2 class="tame">わかるかな～どうかな～お試しあれ！</h2></div>
+     <div class="migiwaku">
+        <span id="box1"></span>
+        <span id="box2"></span>
+        <span id="box3"></span>
+      </div>
+    <div class="sotowaku">
+      <div class="left">
+        <div class="box">
+          <p class="no1"><a onClick="sound()">第１問（ここをクリック）</a></p>
+          <audio id="sound-file" preload="auto">
+            <source src="mp3/M1.mp3" type="audio/mp3" />
+            <source src="wav/M1.wav" type="audio/wav" />
+          </audio>
+         
+          <input type="radio" id="m1" name="q1" value="1" />M1グランプリ<label
+          ></label><br />
+          <input
+            type="radio"
+            id="engei"
+            name="q1"
+            value="2"
+          />ENGEIグランドスラム<label></label><br />
+          <input type="radio" id="the" name="q1" value="3" />THE MANZAI<label
+          ></label><br />
+          <input
+            type="radio"
+            id="kensaku"
+            name="q1"
+            value="4"
+          />検索ちゃん<label></label>
+        </div>
+
+        <div class="box">
+          <p class="no1"><a onClick="sound1()">第２問（ここをクリック）</a></p>
+          <audio id="sound-file1" preload="auto">
+            <source src="mp3/engei.mp3" type="audio/mp3" />
+            <source src="wav/engei.wav" type="audio/wav" />
+          </audio>
+          <input type="radio" id="m12" name="q2" value="1" />M1グランプリ<label
+          ></label><br />
+          <input
+            type="radio"
+            id="engei1"
+            name="q2"
+            value="2"
+          />ENGEIグランドスラム<label></label><br />
+          <input type="radio" id="the1" name="q2" value="3" />THE MANZAI<label
+          ></label><br />
+          <input
+            type="radio"
+            id="kensaku1"
+            name="q2"
+            value="4"
+          />検索ちゃん<label></label>
+        </div>
+        <div class="box">
+          <p class="no1"><a onClick="sound2()">第３問（ここをクリック）</a></p>
+          <audio id="sound-file2" preload="auto">
+            <source src="mp3/themanzai.mp3" type="audio/mp3" />
+            <source src="wav/themanzai.wav" type="audio/wav" />
+          </audio>
+          <input type="radio" id="m13" name="q3" value="1" />M1グランプリ<label
+          ></label><br />
+          <input
+            type="radio"
+            id="engei2"            name="q3"
+            value="2"
+          />ENGEIグランドスラム<label></label><br />
+          <input type="radio" id="the2" name="q3" value="3" />THE MANZAI<label
+          ></label><br />
+          <input
+            type="radio"
+            id="kensaku2"
+            name="q3"
+            value="4"
+          />検索ちゃん<label></label>
+        </div>
+        <div class="box">
+          <p class="no1"><a onClick="sound3()">第４問（ここをクリック）</a></p>
+          <audio id="sound-file3" preload="auto">
+            <source src="mp3/kensakuchan.mp3" type="audio/mp3" />
+            <source src="wav/kensakuchan.wav" type="audio/wav" />
+          </audio>
+
+          <input type="radio" id="m14" name="q4" value="1" />M1グランプリ<label
+          ></label><br />
+          <input
+            type="radio"
+            id="engei3"
+            name="q4"
+            value="2"
+          />ENGEIグランドスラム<label></label><br />
+          <input type="radio" id="the3" name="q4" value="3" />THE MANZAI<label
+          ></label><br />
+          <input
+            type="radio"
+            id="kensaku3"
+            name="q4"
+            value="4"
+          />検索ちゃん<label></label>
+        </div>
+      </div>
+
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="js/anime.js"></script>
+    <script src="index.min.js"></script>
+    <script src="js/app.js"></script>
+
+
+  </body>
+</html>
